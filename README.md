@@ -4,7 +4,7 @@
 ##### ⓘ  Descripción
 
   - Búsquedas web en múltiples plataformas ordenadas por categorias
-
+  - Buscadores, Videos, Torrent, Online, Música y Libros
 
 ##### ⚙  Características
 
