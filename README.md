@@ -3,13 +3,13 @@
 
 ##### ⓘ  Descripción
 
-  - Búsquedas web en múltiples plataformas ordenadas por categorias
+  - Búsquedas web en múltiples plataformas ordenadas por categorías
   - Buscadores, Videos, Torrent, Online, Música y Libros
 
 ##### ⚙  Características
 
     - Busca un mismo término en múltiples plataformas con un click
-    - Permitir ventanas emergentes para este archivo en los ajustes del navegador
+    - * Permitir ventanas emergentes para este archivo en los ajustes del navegador
 
 
 ##  
