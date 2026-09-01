@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buscadores-Web</title>
+    <meta name="author" content="𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘 © ">
+    <meta name="artist" content="ᗪᔕᵉᵛⁱˡˡᵃᑭʳᵒᵍ">
+    <meta name="url" content="https://github.com/dsevillaprog">
+    <meta name="copyright" content="ᗪᔕᵉᵛⁱˡˡᵃᑭʳᵒᵍ © 2025 Todos los Derechos Reservados">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/buscadores.css">
+    <link rel="icon" type="image/x-icon" href="img/lupa_blue.png">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="mx-5">
+        <h1 id="up"><img class="w-vw-5" src="img/lupa_blue.png" alt=""><a href="../../Curso-Formularios/index.html">Buscadores-Web</a></h1>
+        <p>* Permitir ventanas emergentes para este archivo<br> Ajustes -> Permisos -> Añadir ruta a excepciones</p>
+    </div>
+    <form class="container-fluid my-5 py-5 rounded-3 bg-body">
+        <!-- 🔍 Buscadores -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 buscadores">
+            <h2 class="fs-1 fw-bold"> 🔍︎ Buscadores</h2>
+            <hr>
+            <div class="search-box opaco-9">
+                <input type="text" id="webSearchQuery" placeholder="Término de búsqueda ...">
+            </div>
+            <div class="checkboxes card p-3 opaco-8">
+                <label><input type="checkbox" name="webEngine" value="duckduckgo"> DuckDuckGo</label>
+                <label><input type="checkbox" name="webEngine" value="startpage"> Startpage</label>
+                <label><input type="checkbox" name="webEngine" value="brave"> Brave</label>
+                <label><input type="checkbox" name="webEngine" value="mojeek"> Mojeek</label>
+                <label><input type="checkbox" name="webEngine" value="gibiru"> Gibiru</label>
+                <label><input type="checkbox" name="webEngine" value="gigablast"> Gigablast</label>
+                <label><input type="checkbox" name="webEngine" value="google"> Google</label>
+                <label><input type="checkbox" name="webEngine" value="yahoo"> Yahoo</label>
+                <label><input type="checkbox" name="webEngine" value="bing"> Bing</label>
+                <label><input type="checkbox" name="webEngine" value="baidu"> Baidu</label>
+                <label><input type="checkbox" name="webEngine" value="searx"> Searx</label>
+                <label><input type="checkbox" name="webEngine" value="ecosia"> Ecosia</label>
+                <label><input type="checkbox" name="webEngine" value="swisscows"> Swisscows</label>
+                <label><input type="checkbox" name="webEngine" value="webcrawler"> Webcrawler</label>
+                <label><input type="checkbox" name="webEngine" value="wolframalpha"> Wolframalpha</label>
+                <label><input type="checkbox" name="webEngine" value="wikipedia"> Wikipedia</label>
+                <label><input type="checkbox" name="webEngine" value="metager"> Metager</label>
+                <label><input type="checkbox" name="webEngine" value="yandex"> Yandex</label>
+                <label><input type="checkbox" name="webEngine" value="qwant"> Qwant</label>
+            </div>
+            <button onclick="performWebSearch()">Buscar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+
+        <!-- 🎥 Videos -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 videos">
+            <h2 class="fs-1 fw-bold"> 📽 Vídeos</h2>
+            <hr>
+            <div class="search-box">
+                <input type="text" id="videoSearchQuery" placeholder="Término de búsqueda ...">
+            </div>
+            <div class="checkboxes card p-3 opaco-8">
+                <label><input type="checkbox" name="videoEngine" value="youtube"> YouTube</label>
+                <label><input type="checkbox" name="videoEngine" value="bitchute"> Bitchute</label>
+                <label><input type="checkbox" name="videoEngine" value="odysee"> Odysee</label>
+                <label><input type="checkbox" name="videoEngine" value="opentube"> Open-Tube</label>
+                <label><input type="checkbox" name="videoEngine" value="peteyvid"> Peteyvid</label>
+                <label><input type="checkbox" name="videoEngine" value="vimeo"> Vimeo</label>
+                <label><input type="checkbox" name="videoEngine" value="dailymotion"> Dailymotion</label>
+                <label><input type="checkbox" name="videoEngine" value="gibiru"> Gibiru</label>
+                <label><input type="checkbox" name="videoEngine" value="rutube"> Rutube</label>
+                <label><input type="checkbox" name="videoEngine" value="twitch"> Twitch</label>
+            </div>
+            <button onclick="performVideoSearch()">Buscar</button>
+        </div>
+
+        <!-- ⬇️ Torrent -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 torrent">
+            <h2 class="fs-1 fw-bold"> ⤶ Torrent</h2>
+            <hr>
+            <div class="search-box">
+                <input type="text" id="torrentSearchQuery" placeholder="Término de búsqueda ...">
+            </div>
+            <div class="checkboxes card p-3 opaco-8">
+                <label><input type="checkbox" name="torrentEngine" value="pirateBay"> PirateBay</label>
+                <label><input type="checkbox" name="torrentEngine" value="todotorrents"> Todotorrents</label>
+                <label><input type="checkbox" name="torrentEngine" value="gamestorrents"> Gamestorrents</label>
+                <label><input type="checkbox" name="torrentEngine" value="reinventorrent"> Reinventorrent</label>
+                <label><input type="checkbox" name="torrentEngine" value="vivatorrents"> Vivatorrents</label>
+            </div>
+            <button onclick="performTorrentSearch()">Buscar</button>
+        </div>
+
+        <!-- ▷ Online -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 online">
+            <h2 class="fs-1 fw-bold"> ▷ Online</h2>
+            <hr>
+            <div class="search-box">
+                <input type="text" id="onlineSearchQuery" placeholder="Término de búsqueda ...">
+            </div>
+            <div class="checkboxes card p-3 opaco-8">
+                <label><input type="checkbox" name="onlineEngine" value="repelishd"> Repelishd</label>
+                <label><input type="checkbox" name="onlineEngine" value="pelisplus"> Pelisplus</label>
+                <label><input type="checkbox" name="onlineEngine" value="pelisplus2"> Pelisplus2 lat</label>
+                <label><input type="checkbox" name="onlineEngine" value="repelis24"> Repelis24</label>
+                <label><input type="checkbox" name="onlineEngine" value="pelisflix"> Pelisflix</label>
+                <label><input type="checkbox" name="torrentEngine" value="locopelis"> Locopelis</label>
+                <label><input type="checkbox" name="onlineEngine" value="pelisonline"> Pelis-online</label>
+                <label><input type="checkbox" name="onlineEngine" value="pelismaraton"> Pelismaraton</label>
+                <label><input type="checkbox" name="onlineEngine" value="documaniatv"> Documania-tv</label>
+                <label><input type="checkbox" name="onlineEngine" value="areadocumental"> Area-documental</label>
+                <label><input type="checkbox" name="onlineEngine" value="lesdocus"> Les-docus</label>
+            </div>
+            <button onclick="performOnlineSearch()">Buscar</button>
+        </div>
+
+        <!-- ♫  Música -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 music">
+            <h2 class="fs-1 fw-bold"> ♫ Música</h2>
+            <hr>
+            <div class="search-box">
+                <input type="text" id="musicSearchQuery" placeholder="Término de búsqueda ...">
+            </div>
+            <div class="checkboxes card p-3 opaco-8">
+                <label><input type="checkbox" name="musicEngine" value="bandcamp"> Bandcamp</label>
+                <label><input type="checkbox" name="musicEngine" value="soundcloud"> SoundCloud</label>
+                <label><input type="checkbox" name="musicEngine" value="reverbnation"> Reverbnation</label>
+                <label><input type="checkbox" name="musicEngine" value="spotify"> Spotify</label>
+                <label><input type="checkbox" name="musicEngine" value="artcore"> Artcore</label>
+                <label><input type="checkbox" name="musicEngine" value="deezer"> Deezer</label>
+                <label><input type="checkbox" name="musicEngine" value="cambridge"> Cambridge-mt</label>
+            </div>
+            <button onclick="performMusicSearch()">Buscar</button>
+        </div>
+        <!-- 📚 Libros -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 libros">
+            <h2 class="fs-1 fw-bold"> 🖋 Libros</h2>
+            <hr>
+            <div class="search-box">
+                <input type="text" id="bookSearchQuery" placeholder="Término de búsqueda ...">
+            </div>
+            <div class="checkboxes card p-3 opaco-8">
+                <label><input type="checkbox" name="bookEngine" value="googlebooks"> Google Books</label>
+                <label><input type="checkbox" name="bookEngine" value="openlibrary"> OpenLibrary</label>
+                <label><input type="checkbox" name="bookEngine" value="pdfdrive"> PDF Drive</label>
+                <label><input type="checkbox" name="bookEngine" value="zlibrary"> Z-Library (Mirror)</label>
+                <label><input type="checkbox" name="bookEngine" value="projectgutenberg"> Project Gutenberg</label>
+                <label><input type="checkbox" name="bookEngine" value="manybooks"> ManyBooks</label>
+                <label><input type="checkbox" name="bookEngine" value="libgen"> Library Genesis</label>
+            </div>
+            <button onclick="performBookSearch()">Buscar</button>
+        </div>
+        <!-- button class="btn-clear" type="reset">Limpiar</button-->
+    </form>
+
+    
+    <footer>
+        <div class="social">
+            <a target="_blank" href="https://github.com/dsevillaprog/"></a>
+        </div>
+        <p class="pie_pag"><a href="../index.html">𝔻𝕊𝕖𝕧𝕚𝕝𝕝𝕒ℙ𝕣𝕠𝕘</a></p>
+        <p class="derechos"><strong>©&MediumSpace;2025&MediumSpace;</strong> Todos los derechos
+            reservados&MediumSpace;&MediumSpace;</p>
+        <p id="fin"><a class="icon-up" href="#up">⌂</a></p>
+    </footer>
+    <script>
+        // 🔍 Búsqueda en la Web
+        function performWebSearch() {
+            // trim = elimina los espacios adyacentes
+            const searchQuery = document.getElementById("webSearchQuery").value.trim();
+            if (!searchQuery) {
+                alert("Introduce un término de búsqueda.");
+                return;
+            }
+
+            const checkboxes = document.querySelectorAll("input[name='webEngine']:checked");
+            if (checkboxes.length === 0) {
+                alert("Selecciona al menos un buscador.");
+                return;
+            }
+
+            const searchEngines = {
+                startpage: `https://www.startpage.com/search?q=${encodeURIComponent(searchQuery)}`,
+                duckduckgo: `https://duckduckgo.com/?q=${encodeURIComponent(searchQuery)}`,
+                mojeek: `https://www.mojeek.com/search?q=${encodeURIComponent(searchQuery)}`,
+                gibiru: `https://gibiru.com/results.html?q=${encodeURIComponent(searchQuery)}`,
+                gigablast: `https://www.gigablast.com/search?q=${encodeURIComponent(searchQuery)}`,
+                searx: `https://searx.be/search?q=${encodeURIComponent(searchQuery)}`,
+                bing: `https://www.bing.com/search?q=${encodeURIComponent(searchQuery)}`,
+                baidu: `https://www.baidu.com/s?wd=${encodeURIComponent(searchQuery)}`,
+                ecosia: `https://www.ecosia.org/search?q=${encodeURIComponent(searchQuery)}`,
+                yahoo: `https://search.yahoo.com/search?p=${encodeURIComponent(searchQuery)}`,
+                google: `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`,
+                wikipedia: `https://wikipedia.org/w/index.php?go=Go&search=${encodeURIComponent(searchQuery)}`,
+                brave: `https://search.brave.com/search?q=${encodeURIComponent(searchQuery)}`,
+                wolframalpha: `https://www.wolframalpha.com/input?i=${encodeURIComponent(searchQuery)}`,
+                yandex: `https://yandex.com/search/?text=${encodeURIComponent(searchQuery)}`,
+                metager: `https://metager.org/meta/meta.ger3?eingabe=${encodeURIComponent(searchQuery)}`,
+                swisscows: `https://swisscows.com/web?query=${encodeURIComponent(searchQuery)}`,
+                webcrawler: `https://www.webcrawler.com/serp?q=${encodeURIComponent(searchQuery)}`,
+                qwant: `https://www.qwant.com/?q=${encodeURIComponent(searchQuery)}`,
+            };
+
+            checkboxes.forEach(checkbox => {
+                const engine = checkbox.value;
+                window.open(searchEngines[engine], '_blank');
+            });
+        }
+
+        // 🎥 Videos
+        function performVideoSearch() {
+            const searchQuery = document.getElementById("videoSearchQuery").value;
+            if (!searchQuery) {
+                alert("Introduce un término de búsqueda.");
+                return;
+            }
+
+            const checkboxes = document.querySelectorAll("input[name='videoEngine']:checked");
+            if (checkboxes.length === 0) {
+                alert("Selecciona al menos una plataforma.");
+                return;
+            }
+
+            const videoEngines = {
+                youtube: `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`,
+                bitchute: `https://www.bitchute.com/search?query=${encodeURIComponent(searchQuery)}`,
+                odysee: `https://odysee.com/$/search?q=${encodeURIComponent(searchQuery)}`,
+                dailymotion: `https://www.dailymotion.com/search/${encodeURIComponent(searchQuery)}`,
+                opentube: `https://open.tube/search?search=${encodeURIComponent(searchQuery)}`,
+                peteyvid: `https://www.peteyvid.com/index.php?q=${encodeURIComponent(searchQuery)}`,
+                vimeo: `https://vimeo.com/search?q=${encodeURIComponent(searchQuery)}`,
+                twitch: `https://www.twitch.tv/search?term=${encodeURIComponent(searchQuery)}`,
+                gibiru: `https://gibiru.com/results.html?q=${encodeURIComponent(searchQuery)}`,
+                rutube: `https://rutube.ru/search/?query=${encodeURIComponent(searchQuery)}`
+            };
+
+            checkboxes.forEach(checkbox => {
+                const engine = checkbox.value;
+                window.open(videoEngines[engine], '_blank');
+            });
+        }
+
+        // ⬇️  Torrent
+        function performTorrentSearch() {
+            const searchQuery = document.getElementById("torrentSearchQuery").value;
+            if (!searchQuery) {
+                alert("Introduce un término de búsqueda.");
+                return;
+            }
+
+            const checkboxes = document.querySelectorAll("input[name='torrentEngine']:checked");
+            if (checkboxes.length === 0) {
+                alert("Selecciona al menos una plataforma.");
+                return;
+            }
+
+            const torrentEngines = {
+                pirateBay: `https://thepiratebay.org/index.html`,
+                todotorrents: `https://www.todotorrents.org/buscar/${encodeURIComponent(searchQuery)}`,
+                gamestorrents: `https://www.gamestorrents.fm/?s=${encodeURIComponent(searchQuery)}`,
+                reinventorrent: `https://reinventorrent.org/buscar/${encodeURIComponent(searchQuery)}`,
+                vivatorrents: `https://www.vivatorrents.org/?s=${encodeURIComponent(searchQuery)}`
+            };
+
+            checkboxes.forEach(checkbox => {
+                const engine = checkbox.value;
+                window.open(torrentEngines[engine], '_blank');
+            });
+        }
+
+        // ▷ Online
+        function performOnlineSearch() {
+            const searchQuery = document.getElementById("onlineSearchQuery").value;
+            if (!searchQuery) {
+                alert("Introduce un término de búsqueda.");
+                return;
+            }
+
+            const checkboxes = document.querySelectorAll("input[name='onlineEngine']:checked");
+            if (checkboxes.length === 0) {
+                alert("Selecciona al menos una plataforma.");
+                return;
+            }
+
+            const onlineEngines = {
+                repelishd: `https://repelishd.online/?s=${encodeURIComponent(searchQuery)}`,
+                pelisplus: `https://pelisplus.tel/buscar-${encodeURIComponent(searchQuery)}`,
+                pelisplus2: `https://pelisplus2.link/?s=${encodeURIComponent(searchQuery)}`,
+                repelis24: `https://hd.repelis24.show/?s=${encodeURIComponent(searchQuery)}`,
+                pelisflix: `https://pelisflix.online/?s=${encodeURIComponent(searchQuery)}`,
+                locopelis: `https://www.locopelis.com/buscar/?q=${encodeURIComponent(searchQuery)}`,
+                pelisonline: `https://www.pelisonline.me/pelis/?s=${encodeURIComponent(searchQuery)}`,
+                pelismaraton: `https://pelismaraton.nu/?s=${encodeURIComponent(searchQuery)}`,
+                documaniatv: `https://www.documaniatv.com/search.php?keywords=${encodeURIComponent(searchQuery)}`,
+                areadocumental: `https://www.area-documental.com/resultados/buscar=${encodeURIComponent(searchQuery)}/`,
+                lesdocus: `https://www.les-docus.com/?s=${encodeURIComponent(searchQuery)}`
+            };
+
+            checkboxes.forEach(checkbox => {
+                const engine = checkbox.value;
+                window.open(onlineEngines[engine], '_blank');
+            });
+        }
+        // ♫ Música
+        function performMusicSearch() {
+            const searchQuery = document.getElementById("musicSearchQuery").value.trim();
+            if (!searchQuery) {
+                alert("Introduce un término de búsqueda.");
+                return;
+            }
+
+            const checkboxes = document.querySelectorAll("input[name='musicEngine']:checked");
+            if (checkboxes.length === 0) {
+                alert("Selecciona al menos una plataforma.");
+                return;
+            }
+
+            const musicEngines = {
+                cambridge: `https://www.cambridge-mt.com/ms/mtk/`,
+                deezer: `https://www.deezer.com/search/${encodeURIComponent(searchQuery)}`,
+                artcore: `https://www.artcore.com/search?%3Fquery=${encodeURIComponent(searchQuery)}%26sort%3Drelevance%26size%3D40%26page%3D1%26aggregate%3Dtrue%26sellerSearch%3Dtrue`,
+                spotify: `https://open.spotify.com/search/${encodeURIComponent(searchQuery)}`,
+                reverbnation: `https://legacy.reverbnation.com/main/search?q=${encodeURIComponent(searchQuery)}`,
+                soundcloud: `https://soundcloud.com/search?q=${encodeURIComponent(searchQuery)}`,
+                bandcamp: `https://bandcamp.com/search?q=${encodeURIComponent(searchQuery)}`
+            };
+
+            checkboxes.forEach(checkbox => {
+                const engine = checkbox.value;
+                window.open(musicEngines[engine], '_blank');
+            });
+        }
+        // 📚 Libros
+        function performBookSearch() {
+            const searchQuery = document.getElementById("bookSearchQuery").value.trim();
+            if (!searchQuery) {
+                alert("Introduce un término de búsqueda.");
+                return;
+            }
+
+            const checkboxes = document.querySelectorAll("input[name='bookEngine']:checked");
+            if (checkboxes.length === 0) {
+                alert("Selecciona al menos una plataforma.");
+                return;
+            }
+
+            const bookEngines = {
+                googlebooks: `https://www.google.com/search?tbm=bks&q=${encodeURIComponent(searchQuery)}`,
+                openlibrary: `https://openlibrary.org/search?q=${encodeURIComponent(searchQuery)}`,
+                pdfdrive: `https://www.pdfdrive.com/search?q=${encodeURIComponent(searchQuery)}`,
+                zlibrary: `https://singlelogin.re/?q=${encodeURIComponent(searchQuery)}`,
+                projectgutenberg: `https://www.gutenberg.org/ebooks/search/?query=${encodeURIComponent(searchQuery)}`,
+                manybooks: `https://manybooks.net/search-book?search=${encodeURIComponent(searchQuery)}`,
+                libgen: `http://libgen.is/search.php?req=${encodeURIComponent(searchQuery)}`
+            };
+
+            checkboxes.forEach(checkbox => {
+                const engine = checkbox.value;
+                window.open(bookEngines[engine], '_blank');
+            });
+        }
+    </script>
+</body>
+
+</html>
