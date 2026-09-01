@@ -1,4 +1,4 @@
-### <img src="/img/logo-html.png" alt="HTML" width="auto" height="25"><img src="/img/logo-css-tr.png" alt="CSS" width="auto" height="25"><img src="../../../CURSO-CSS/blob/main/img/logo-css-tr.png" alt="JavaScript" width="auto" height="25"> &MediumSpace; BUSCADORES-WEB
+### <img src="../../../CURSO-CSS/blob/main/img/logo-html.png" alt="HTML" width="auto" height="25"><img src="../../../CURSO-CSS/blob/main/img/logo-css-tr.png" alt="CSS" width="auto" height="25"><img src="../../../CURSO-CSS/blob/main/img/logo-js.png" alt="JavaScript" width="auto" height="25"> &MediumSpace; BUSCADORES-WEB
 ## 
 
 ##### ⓘ  Descripción
