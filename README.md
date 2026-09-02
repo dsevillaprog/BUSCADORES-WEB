@@ -14,14 +14,12 @@
 ##  
 ##### » Uso:
 * Clonar el repositorio
+   ```bash
+    git clone https://github.com/dsevillaprog/BUSCADORES-WEB.git
+   ```
 *  Abrir con el navegador
 *   Ir a Ajustes del navegador -> Permisos
-    -> Permitir ventanas emergentes / Añadir ruta a excepciones
-   ```bash
-    sudo apt update && sudo apt install firefox gnome-terminal protonvpn-cli -y
-    chmod u+x BUSCADORES-WEB.sh
-   ./BUSCADORES-WEB.sh
-   ```
+    -> Ventanas emergentes -> Añadir ruta del archivo a excepciones
 
 ##  
 ![BUSCADORES-WEB_html](/img/BUSCADORES-WEB_html.png?raw=true)
