@@ -8,7 +8,7 @@
 ##### ⚙  Características:
 
   - Busca un mismo término en múltiples plataformas con un click
-  - Categorías: Buscadores, Videos, Torrent, Online, Música y Libros
+  - Categorías: Buscadores, Videos, Música, Online, Torrent y Libros
 
 ##  
 ##### » Uso:
