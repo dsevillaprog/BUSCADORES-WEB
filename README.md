@@ -4,12 +4,11 @@
 ##### ⓘ  Descripción:
 
   - Búsquedas web en múltiples plataformas ordenadas por categorías
-  - Buscadores, Videos, Torrent, Online, Música y Libros
 
 ##### ⚙  Características:
 
   - Busca un mismo término en múltiples plataformas con un click
-  - \* Permitir ventanas emergentes para este archivo en los ajustes del navegador
+  - Categorías: Buscadores, Videos, Torrent, Online, Música y Libros
 
 ##  
 ##### » Uso:
@@ -21,6 +20,7 @@
 *  Abrir con el navegador
 *   Ir a Ajustes del navegador -> Permisos
     -> Ventanas emergentes -> Añadir ruta del archivo a excepciones
+    \*Sin este permiso, sólo abrirá el primer enlace seleccionado
 
 ##  
 ![BUSCADORES-WEB_html](/img/BUSCADORES-WEB_html.png?raw=true)
