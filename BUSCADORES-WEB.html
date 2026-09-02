@@ -77,23 +77,25 @@
             <button onclick="performVideoSearch()">Buscar</button>
         </div>
 
-        <!-- ⬇️ Torrent -->
-        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 torrent">
-            <h2 class="fs-1 fw-bold"> ⤶ Torrent</h2>
+        <!-- ♫  Música -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 music">
+            <h2 class="fs-1 fw-bold"> ♫ Música</h2>
             <hr>
             <div class="search-box">
-                <input type="text" id="torrentSearchQuery" placeholder="Término de búsqueda ...">
+                <input type="text" id="musicSearchQuery" placeholder="Término de búsqueda ...">
             </div>
             <div class="checkboxes card p-3 opaco-8">
-                <label><input type="checkbox" name="torrentEngine" value="pirateBay"> PirateBay</label>
-                <label><input type="checkbox" name="torrentEngine" value="todotorrents"> Todotorrents</label>
-                <label><input type="checkbox" name="torrentEngine" value="gamestorrents"> Gamestorrents</label>
-                <label><input type="checkbox" name="torrentEngine" value="reinventorrent"> Reinventorrent</label>
-                <label><input type="checkbox" name="torrentEngine" value="vivatorrents"> Vivatorrents</label>
+                <label><input type="checkbox" name="musicEngine" value="bandcamp"> Bandcamp</label>
+                <label><input type="checkbox" name="musicEngine" value="soundcloud"> SoundCloud</label>
+                <label><input type="checkbox" name="musicEngine" value="reverbnation"> Reverbnation</label>
+                <label><input type="checkbox" name="musicEngine" value="spotify"> Spotify</label>
+                <label><input type="checkbox" name="musicEngine" value="artcore"> Artcore</label>
+                <label><input type="checkbox" name="musicEngine" value="deezer"> Deezer</label>
+                <label><input type="checkbox" name="musicEngine" value="cambridge"> Cambridge-mt</label>
             </div>
-            <button onclick="performTorrentSearch()">Buscar</button>
+            <button onclick="performMusicSearch()">Buscar</button>
         </div>
-
+        
         <!-- ▷ Online -->
         <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 online">
             <h2 class="fs-1 fw-bold"> ▷ Online</h2>
@@ -117,24 +119,23 @@
             <button onclick="performOnlineSearch()">Buscar</button>
         </div>
 
-        <!-- ♫  Música -->
-        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 music">
-            <h2 class="fs-1 fw-bold"> ♫ Música</h2>
+        <!-- ⬇️ Torrent -->
+        <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 torrent">
+            <h2 class="fs-1 fw-bold"> ⤶ Torrent</h2>
             <hr>
             <div class="search-box">
-                <input type="text" id="musicSearchQuery" placeholder="Término de búsqueda ...">
+                <input type="text" id="torrentSearchQuery" placeholder="Término de búsqueda ...">
             </div>
             <div class="checkboxes card p-3 opaco-8">
-                <label><input type="checkbox" name="musicEngine" value="bandcamp"> Bandcamp</label>
-                <label><input type="checkbox" name="musicEngine" value="soundcloud"> SoundCloud</label>
-                <label><input type="checkbox" name="musicEngine" value="reverbnation"> Reverbnation</label>
-                <label><input type="checkbox" name="musicEngine" value="spotify"> Spotify</label>
-                <label><input type="checkbox" name="musicEngine" value="artcore"> Artcore</label>
-                <label><input type="checkbox" name="musicEngine" value="deezer"> Deezer</label>
-                <label><input type="checkbox" name="musicEngine" value="cambridge"> Cambridge-mt</label>
+                <label><input type="checkbox" name="torrentEngine" value="pirateBay"> PirateBay</label>
+                <label><input type="checkbox" name="torrentEngine" value="todotorrents"> Todotorrents</label>
+                <label><input type="checkbox" name="torrentEngine" value="gamestorrents"> Gamestorrents</label>
+                <label><input type="checkbox" name="torrentEngine" value="reinventorrent"> Reinventorrent</label>
+                <label><input type="checkbox" name="torrentEngine" value="vivatorrents"> Vivatorrents</label>
             </div>
-            <button onclick="performMusicSearch()">Buscar</button>
+            <button onclick="performTorrentSearch()">Buscar</button>
         </div>
+
         <!-- 📚 Libros -->
         <div class="section col-md-8 align-items-center mx-auto mt-5 pt-5 libros">
             <h2 class="fs-1 fw-bold"> 🖋 Libros</h2>
