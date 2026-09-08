@@ -51,6 +51,7 @@
                 <label><input type="checkbox" name="webEngine" value="yandex"> Yandex</label>
                 <label><input type="checkbox" name="webEngine" value="qwant"> Qwant</label>
             </div>
+            <label  style="margin: auto 15px"><input type="checkbox" name="webEngine" id="allweb"> Todos</label>
             <button onclick="performWebSearch()">Buscar</button>
             <button type="reset">Limpiar</button>
         </div>
@@ -74,6 +75,7 @@
                 <label><input type="checkbox" name="videoEngine" value="rutube"> Rutube</label>
                 <label><input type="checkbox" name="videoEngine" value="twitch"> Twitch</label>
             </div>
+            <label  style="margin: auto 15px"><input type="checkbox" name="videoEngine" id="allvideo"> Todos</label>
             <button onclick="performVideoSearch()">Buscar</button>
         </div>
 
@@ -93,6 +95,7 @@
                 <label><input type="checkbox" name="musicEngine" value="deezer"> Deezer</label>
                 <label><input type="checkbox" name="musicEngine" value="cambridge"> Cambridge-mt</label>
             </div>
+            <label  style="margin: auto 15px"><input type="checkbox" name="musicEngine" id="allmusic"> Todos</label>
             <button onclick="performMusicSearch()">Buscar</button>
         </div>
         
@@ -116,6 +119,7 @@
                 <label><input type="checkbox" name="onlineEngine" value="areadocumental"> Area-documental</label>
                 <label><input type="checkbox" name="onlineEngine" value="lesdocus"> Les-docus</label>
             </div>
+            <label  style="margin: auto 15px"><input type="checkbox" name="onlineEngine" id="allonline"> Todos</label>
             <button onclick="performOnlineSearch()">Buscar</button>
         </div>
 
@@ -133,6 +137,7 @@
                 <label><input type="checkbox" name="torrentEngine" value="reinventorrent"> Reinventorrent</label>
                 <label><input type="checkbox" name="torrentEngine" value="vivatorrents"> Vivatorrents</label>
             </div>
+            <label  style="margin: auto 15px"><input type="checkbox" name="torrentEngine" id="alltorrent"> Todos</label>
             <button onclick="performTorrentSearch()">Buscar</button>
         </div>
 
@@ -152,9 +157,10 @@
                 <label><input type="checkbox" name="bookEngine" value="manybooks"> ManyBooks</label>
                 <label><input type="checkbox" name="bookEngine" value="libgen"> Library Genesis</label>
             </div>
+            <label  style="margin: auto 15px"><input type="checkbox" name="bookEngine" id="allbook"> Todos</label>
             <button onclick="performBookSearch()">Buscar</button>
         </div>
-        <!-- button class="btn-clear" type="reset">Limpiar</button-->
+        <button class="section checkboxes card p-3 mx-auto" onclick="performAllSearch()">TODOS</button>
     </form>
 
     
@@ -169,17 +175,23 @@
     </footer>
     <script>
         // 🔍 Búsqueda en la Web
+        document.getElementById('allweb').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('input[name="webEngine"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         function performWebSearch() {
             // trim = elimina los espacios adyacentes
             const searchQuery = document.getElementById("webSearchQuery").value.trim();
             if (!searchQuery) {
-                alert("Introduce un término de búsqueda.");
+                alert("Introduce un término de búsqueda para Buscadores.");
                 return;
             }
 
             const checkboxes = document.querySelectorAll("input[name='webEngine']:checked");
             if (checkboxes.length === 0) {
-                alert("Selecciona al menos un buscador.");
+                alert("Selecciona al menos un buscador Web.");
                 return;
             }
 
@@ -212,16 +224,22 @@
         }
 
         // 🎥 Videos
+        document.getElementById('allvideo').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('input[name="videoEngine"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         function performVideoSearch() {
             const searchQuery = document.getElementById("videoSearchQuery").value;
             if (!searchQuery) {
-                alert("Introduce un término de búsqueda.");
+                alert("Introduce un término de búsqueda para Videos.");
                 return;
             }
 
             const checkboxes = document.querySelectorAll("input[name='videoEngine']:checked");
             if (checkboxes.length === 0) {
-                alert("Selecciona al menos una plataforma.");
+                alert("Selecciona al menos una plataforma de Video.");
                 return;
             }
 
@@ -245,16 +263,22 @@
         }
 
         // ⬇️  Torrent
+        document.getElementById('alltorrent').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('input[name="torrentEngine"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         function performTorrentSearch() {
             const searchQuery = document.getElementById("torrentSearchQuery").value;
             if (!searchQuery) {
-                alert("Introduce un término de búsqueda.");
+                alert("Introduce un término de búsqueda para Torrent.");
                 return;
             }
 
             const checkboxes = document.querySelectorAll("input[name='torrentEngine']:checked");
             if (checkboxes.length === 0) {
-                alert("Selecciona al menos una plataforma.");
+                alert("Selecciona al menos una web Torrent.");
                 return;
             }
 
@@ -273,16 +297,22 @@
         }
 
         // ▷ Online
+        document.getElementById('allonline').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('input[name="onlineEngine"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         function performOnlineSearch() {
             const searchQuery = document.getElementById("onlineSearchQuery").value;
             if (!searchQuery) {
-                alert("Introduce un término de búsqueda.");
+                alert("Introduce un término de búsqueda para Online.");
                 return;
             }
 
             const checkboxes = document.querySelectorAll("input[name='onlineEngine']:checked");
             if (checkboxes.length === 0) {
-                alert("Selecciona al menos una plataforma.");
+                alert("Selecciona al menos una plataforma Online.");
                 return;
             }
 
@@ -306,16 +336,22 @@
             });
         }
         // ♫ Música
+        document.getElementById('allmusic').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('input[name="musicEngine"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         function performMusicSearch() {
             const searchQuery = document.getElementById("musicSearchQuery").value.trim();
             if (!searchQuery) {
-                alert("Introduce un término de búsqueda.");
+                alert("Introduce un término de búsqueda para Música.");
                 return;
             }
 
             const checkboxes = document.querySelectorAll("input[name='musicEngine']:checked");
             if (checkboxes.length === 0) {
-                alert("Selecciona al menos una plataforma.");
+                alert("Selecciona al menos una plataforma de Música.");
                 return;
             }
 
@@ -335,16 +371,22 @@
             });
         }
         // 📚 Libros
+        document.getElementById('allbook').addEventListener('change', function () {
+            const checkboxes = document.querySelectorAll('input[name="bookEngine"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         function performBookSearch() {
             const searchQuery = document.getElementById("bookSearchQuery").value.trim();
             if (!searchQuery) {
-                alert("Introduce un término de búsqueda.");
+                alert("Introduce un término de búsqueda para Libros.");
                 return;
             }
 
             const checkboxes = document.querySelectorAll("input[name='bookEngine']:checked");
             if (checkboxes.length === 0) {
-                alert("Selecciona al menos una plataforma.");
+                alert("Selecciona al menos una web de Libros.");
                 return;
             }
 
@@ -362,6 +404,16 @@
                 const engine = checkbox.value;
                 window.open(bookEngines[engine], '_blank');
             });
+        }
+        // TODOS
+        // ++AllsearchQuery
+        function performAllSearch() {
+            performWebSearch()
+            performVideoSearch()
+            performMusicSearch()
+            performOnlineSearch()
+            performTorrentSearch()
+            performBookSearch()
         }
     </script>
 </body>
