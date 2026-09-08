@@ -19,6 +19,7 @@
    
 2.  Abrir `BUSCADORES-WEB.html` con el navegador
 3.  Permitir ventanas emergentes
+   
     Ir a Ajustes del navegador -> Permisos -> Ventanas emergentes -> Añadir ruta del archivo a excepciones
     \*Sin este permiso, sólo abrirá el primer enlace seleccionado
 
