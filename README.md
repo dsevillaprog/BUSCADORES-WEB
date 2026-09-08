@@ -21,7 +21,8 @@
 3.  Permitir ventanas emergentes
    
     Ir a Ajustes del navegador -> Permisos -> Ventanas emergentes -> Añadir ruta del archivo a excepciones
-    \*Sin este permiso, sólo abrirá el primer enlace seleccionado
+
+ *\**Sin este permiso, sólo abrirá el primer enlace seleccionado
 
 ##  
 ![BUSCADORES-WEB_html](/img/BUSCADORES-WEB_html.png?raw=true)
